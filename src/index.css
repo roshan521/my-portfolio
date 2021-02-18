@@ -1,13 +1,153 @@
-body {
+@import url("https://fonts.googleapis.com/css2?family=Mulish&display=swap");
+
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Mulish", sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.navbar-brand {
+  font-size: 1.9rem !important;
+  color: #565387 !important;
+}
+
+.navbar a {
+  font-size: 1.3rem;
+  text-transform: capitalize;
+}
+
+.menu_active {
+  font-weight: bold;
+  border-bottom: 1px solid #565387;
+}
+
+.navbar a:hover {
+  color: #3498db !important;
+}
+
+@media (max-width: 991px) {
+  .navbar-brand {
+    font-size: 1.5rem !important;
+  }
+
+  .menu_active {
+    color: #565387;
+    border-bottom: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .adjustment {
+    margin-bottom: 100px;
+  }
+}
+/* Main landing section */
+
+#header {
+  width: 100%;
+  height: 80vh;
+}
+
+#header .brand-name {
+  color: #3498db;
+}
+
+#header h2 {
+  color: #484848;
+  font-size: 2rem;
+}
+
+#header .btn-get-started {
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 10px 30px;
+  border-radius: 50px;
+  transition: 0.5s;
+  color: #3498db;
+  border: 2px solid #3498db;
+  text-decoration: none;
+}
+
+#header .btn-get-started:hover {
+  background: #3498db;
+  color: #fff;
+}
+
+#header .animated {
+  animation: up-down 2s ease-in-out infinite alternate-reverse both;
+}
+
+@keyframes up-down {
+  0% {
+    transform: translateY(10px);
+  }
+  100% {
+    transform: translateY(-10px);
+  }
+}
+
+/* For Contact section */
+
+.divider {
+  border: 1px solid #6f6bfa;
+  letter-spacing: 3px;
+  box-shadow: 2px 2px 5px 2px #231f1d2a;
+}
+
+.divider:hover {
+  box-shadow: 5px 5px 20px 5px #231f1d2a;
+  cursor: pointer;
+}
+
+#contact .img-fluid {
+  height: 5vh !important;
+}
+
+.banner {
+  background-image: url("./images/mountain.jpg");
+  background-size: cover;
+  height: 20vh;
+  letter-spacing: 3px;
+  color: #fff;
+  font-weight: 500;
+}
+
+.banner strong {
+  color: #94db7d;
+}
+
+.get-your-btn {
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 10px 30px;
+  border-radius: 15px;
+  transition: 0.5s;
+  background-color: #fff;
+  text-decoration: none;
+  color: black;
+}
+
+.get-your-btn:hover {
+  background-color: black;
+  color: #fff;
+}
+
+.social-icons {
+  display: inline-block;
+  font-size: 2rem;
+  color: blue;
+}
+
+.social-icons li {
+  list-style-type: none;
+}
+
+.icon :hover {
+  color: black;
+  cursor: pointer;
 }
